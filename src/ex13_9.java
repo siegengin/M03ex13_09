@@ -1,4 +1,33 @@
-public class Exercise_13_09 {
+/** +---------------------+             +---------------------+
+ |      ex13_9        |             |    GeometricObject  |
+ +---------------------+             +---------------------+
+ | <<main>>            |             | - color: String    |
+ | + main(args: String[])|           | - filled: boolean  |
+ |                     |             | - dateCreated: Date|
+ +---------------------+             +---------------------+
+ ^                            ^              ^
+ | extends                    | extends      | implements
+ |                            |              |
+ +---------------------+     +---------------------+   +---------------------+
+ |     Circle          |     |      Comparable     |
+ +---------------------+     +---------------------+
+ | - radius: double   |     | + compareTo(o: Object): int |
+ +---------------------+     +---------------------+
+ | + Circle()         |
+ | + Circle(radius: double) |
+ | + Circle(radius: double, color: String, filled: boolean) |
+ | + getRadius(): double |
+ | + setRadius(radius: double): void |
+ | + getArea(): double |
+ | + getDiameter(): double |
+ | + getPerimeter(): double |
+ | + equals(o: Object): boolean |
+ | + hashCode(): int |
+ | + compareTo(o: Circle): int |
+ | + toString(): String |
+ +---------------------+
+**/
+ public class ex13_9 {
     /** Main method */
     public static void main(String[] args) {
         // Create three Circle objects
